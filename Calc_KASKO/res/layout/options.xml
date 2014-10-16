@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="1"
+	android:stretchColumns="*" >
+    
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content">
+	   	<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_span="2"
+			android:textSize="10pt"
+            android:textStyle="bold"
+			android:gravity="center"
+			android:text="@string/risk" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbDop"
+	        android:layout_span="2"
+	        android:text="@string/dop" />
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="@string/dop_summa" />
+		<EditText 
+		    android:id="@+id/etDopSumma"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:background="@android:drawable/editbox_background"/>
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbTuning"
+	        android:layout_span="2"
+	        android:text="@string/tuning" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbDAGO"
+	        android:layout_span="2"
+	        android:text="@string/dago" />
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="@string/summa_rub" />
+	    <Spinner 
+	        android:id="@+id/spinDAGOSumma"
+	        android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	       	android:spinnerMode="dialog"
+	       	android:entries="@array/summa_dago_spisok" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbNS"
+	        android:layout_span="2"
+	        android:text="@string/ns" />
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="@string/system_ns" />
+	    <Spinner 
+	        android:id="@+id/spinSystemNS"
+	        android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	       	android:spinnerMode="dialog"
+	       	android:entries="@array/system_ns_spisok" />
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="@string/kol_vo" />
+		<EditText 
+		    android:id="@+id/etKolvo"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:background="@android:drawable/editbox_background"/>
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="@string/for_1_seat" />
+		<EditText 
+		    android:id="@+id/etFor1Seat"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:background="@android:drawable/editbox_background"/>
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="@string/dop_summa" />
+		<EditText 
+		    android:id="@+id/etNSSumma"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:background="@android:drawable/editbox_background"/>
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content">
+	   	<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_span="2"
+			android:textSize="10pt"
+            android:textStyle="bold"
+			android:gravity="center"
+			android:text="@string/serv_options" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbGAP"
+	        android:layout_span="2"
+	        android:text="@string/gap" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbRemontBez"
+	        android:layout_span="2"
+	        android:text="@string/remont_bez" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbKomissar"
+	        android:layout_span="2"
+	        android:text="@string/komissar" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbSborSpr"
+	        android:layout_span="2"
+	        android:text="@string/sbor_spr" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<CheckBox
+	        android:id="@+id/cbEvacuation"
+	        android:layout_span="2"
+	        android:text="@string/evacuation" />
+	</TableRow>
+</TableLayout>

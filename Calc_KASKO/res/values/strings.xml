@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Калькулятор МАКС</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="pred_rasch_KASKO">Предварительный расчет КАСКО</string>
+	<string name="program">Программа:</string>
+	<string name="srok">Срок:</string>
+	<string name="strahovatel">Страхователь:</string>
+	<string name="podskazka_IP">Для ИП выберите ЮЛ</string>
+	<string name="bazovyj_raschet">Базовый расчет</string>
+	<string name="marka">Марка:</string>
+	<string name="model">Модель:</string>
+	<string name="tcel_isp">Цель использования:</string>
+	<string name="ts_new">ТС новое</string>
+	<string name="data_priobr">Дата приобретения:</string>
+	<string name="god_izgotovl">Год изготовления:</string>
+	<string name="probeg">Пробег:</string>
+	<string-array name="program_spec">
+	    <item>Базовая 2014 с 02.06.2014</item>
+	    <item>МАКС-RENAULT</item>
+	    <item>KIA DRP</item>
+	</string-array>
+	<string-array name="kasko_vid">
+	    <item>КАСКО</item>
+	    <item>КАСКО 25</item>
+	    <item>КАСКО 30</item>
+	    <item>КАСКО 35</item>
+	</string-array>
+	<string-array name="srok_spisok">
+	    <item>1 месяц</item>
+	    <item>2 месяца</item>
+	    <item>3 месяца</item>
+	    <item>4 месяца</item>
+	    <item>5 месяцев</item>
+	    <item>6 месяцев</item>
+	    <item>7 месяцев</item>
+	    <item>8 месяцев</item>
+	    <item>9 месяцев</item>
+	    <item>10 месяцев</item>
+	    <item>11 месяцев</item>
+	    <item>год</item>
+	    <item>от года до 2-х лет</item>
+	</string-array>
+	<string-array name="strahovatel_tip">
+	    <item>ФЛ</item>
+	    <item>ЮЛ</item>
+	</string-array>
+	<string-array name="tcel_spisok">
+	    <item>Личные</item>
+	    <item>Учебная езда</item>
+	    <item>Инкассация</item>
+	    <item>Скорая помощь</item>
+	    <item>Такси</item>
+	    <item>Дорожные и специальные ТС</item>
+	    <item>Перевозка пассажиров для грузовых ТС</item>
+	    <item>Перевозки опасных грузов</item>
+	    <item>Прочее</item>
+	    <item>Тест-драйв</item>
+	    <item>Прокат</item>
+	    <item>Служебные</item>
+	    <item>Коммерческие</item>
+	    <item>Школьный автобус</item>
+	</string-array>
+	<string name="valyuta">Валюта:</string>
+	<string-array name="valyuta_spisok">
+	    <item>RUR</item>
+	    <item>USD</item>
+	    <item>EUR</item>
+	</string-array>
+	<string name="stoimost">Стоимость:</string>
+	<string name="strah_summa">Страховая сумма:</string>
+	<string name="primenit_k16">Применить К16</string>
+	<string name="ohranka">Охранная система:</string>
+	<string-array name="ohranka_spisok">
+	    <item>Отсутствует</item>
+	    <item>AutoConnex-ZoomBox</item>
+	    <item>AutoConnex-Все модели, кроме ZoomBox</item>
+	    <item>Starcom-Все модели</item>
+	    <item>Star Line-Победит</item>
+	    <item>Star Line-D64</item>
+	    <item>Star Line-D94</item>
+	    <item>Star Line-B64</item>
+	    <item>Star Line-B94</item>
+	    <item>Автолокатор-Сателит</item>
+	    <item>Автолокатор-Супер</item>
+	    <item>Автолокатор-Все модели,кроме</item>
+	    <item>Аркан-City</item>
+	    <item>Аркан-Control</item>
+	    <item>Аркан-Satellite</item>
+	    <item>Голден Ай-Максимум</item>
+	    <item>Голден Ай-Стандарт</item>
+	    <item>Голден Ай-Стелс</item>
+	    <item>Логистик-Exclusive</item>
+	    <item>Логистик-VIP</item>
+	    <item>Логистик-Все модели,кроме</item>
+	    <item>Лоджек-Горизонт</item>
+	    <item>Лоджек-Все модели, кроме Горизонт</item>
+	    <item>МЦМ-Все модели</item>
+	    <item>Талисман-Все модели</item>
+	    <item>Тритон-Advance</item>
+	    <item>Тритон-Comfort</item>
+	    <item>Цезарь Сателит-Tracker</item>
+	    <item>Цезарь Сателит-Все модели, кроме</item>
+	    <item>Эшелон-Все модели</item>
+	    <item>Black bug super-Серия 84</item>
+	    <item>Black bug super-Серия 85</item>
+	    <item>Иные-Все модели</item>
+	</string-array>
+	<string name="neohr_stoyanka">Неохраняемая стоянка</string>
+	<string name="arenda">Аренда</string>
+	<string name="koef_fil">Коэффициент филиала:</string>
+	<string-array name="koef_fil_spisok">
+	    <item>1.00</item>
+	    <item>0.99</item>
+	    <item>0.98</item>
+	    <item>0.97</item>
+	    <item>0.96</item>
+	    <item>0.95</item>
+	    <item>0.94</item>
+	    <item>0.93</item>
+	    <item>0.92</item>
+	    <item>0.91</item>
+	    <item>0.90</item>
+	</string-array>
+	<string name="neogr_kolvo">Неограниченное количество водителей ТС</string>
+	<string name="vozrast">Возраст:</string>
+	<string name="stag">Стаж:</string>
+	<string-array name="vozrast_spisok">
+	    <item>до 22 лет вкл.</item>
+	    <item>свыше 22 до 25 лет вкл.</item>
+	    <item>свыше 25 до 30 лет вкл.</item>
+	    <item>свыше 30 до 35 лет вкл.</item>
+	    <item>свыше 35 до 60 лет вкл.</item>
+	    <item>свыше 60 лет</item>
+	</string-array>
+	<string-array name="stag_spisok">
+	    <item>до 2 лет вкл.</item>
+	    <item>свыше 2 до 5 лет вкл.</item>
+	    <item>свыше 5 до 10 лет вкл.</item>
+	    <item>свыше 10 лет и более</item>
+	</string-array>
+	<string name="ot">от:</string>
+	<string name="_do">до:</string>
+	
+	<string name="optim_stoim">Оптимизация стоимости</string>
+	<string name="strah_pokr">Страховое покрытие:</string>
+	<string-array name="strah_pokr_spisok">
+	    <item>Хищение и ущерб</item>
+	    <item>Ущерб</item>
+	    <item>Хищение и полная гибель</item>
+	    <item>Только один страховой случай</item>
+	</string-array>
+	<string name="franshiza">Франшиза, руб.:</string>
+	<string-array name="franshiza_spisok">
+	    <item>5 000</item>
+	    <item>10 000</item>
+	    <item>15 000</item>
+	    <item>20 000</item>
+	    <item>25 000</item>
+	    <item>30 000</item>
+	    <item>50 000</item>
+	    <item>75 000</item>
+	    <item>100 000</item>
+	</string-array>
+	<string name="usl_primen">Условие применения:</string>
+	<string-array name="usl_primen_spisok">
+	    <item>Отсутствует</item>
+	    <item>С 1-го страхового случая</item>
+	    <item>Со 2-го страхового случая</item>
+	    <item>При отсутствии ответчика</item>
+	</string-array>
+	<string name="dop_opcii">Дополнительные опции:</string>
+	<string name="agr_ss">Агрегатная страховая сумма</string>
+	<string name="otkaz_steklo">Отказ от замены стеклянных элементов без справок</string>
+	<string name="otkaz_remont">Отказ от ремонта ТС без справок в пределах 3%</string>
+	<string name="usl_vypl">Условия выплаты:</string>
+	<string name="remont_stoa">Ремонт на СТОА по направлению страховщика</string>
+	<string name="ubytki_pred">Убытки по пред. договору КАСКО:</string>
+	<string-array name="ubytki_pred_spisok">
+	    <item>Нет.Первоначальный договор</item>
+	    <item>Нет.Безубыточное страхование в ЗАО "МАКС"</item>
+	    <item>Сумма выплат не более 100% от страховой суммы</item>
+	    <item>Сумма выплат не более 25% от страховой суммы</item>
+	    <item>Сумма выплат от 25 до 50% от страховой суммы</item>
+	    <item>Сумма выплат более 50% от страховой суммы</item>
+	    <item>Суброгация или неурегулированные убытки</item>
+	    <item>Нет.Переход из другой СК</item>
+	</string-array>
+	<string name="kolvo_ts">Количество ТС в действующих договорах:</string>
+	<string name="uchastie_bank">При участии банка:</string>
+	<string-array name="uchastie_bank_spisok">
+	    <item>Нет</item>
+	    <item>ВТБ24</item>
+	    <item>Восточный экспресс</item>
+	    <item>МДМ</item>
+	    <item>Открытие</item>
+	    <item>Росбанк</item>
+	    <item>Собин</item>
+	    <item>Тойота</item>
+	    <item>Траст</item>
+	    <item>Уралсиб</item>
+	    <item>Юникредит</item>
+	    <item>Другой банк</item>
+	</string-array>
+	<string name="corp">Корпоративный клиент</string>
+	<string name="skidka_kv">Скидка за счет КВ</string>
+	
+	<string name="agent">Агент</string>
+	<string name="kod_agent">Код агента:</string>
+	<string name="kod_agent_">Код агента</string>
+	<string name="tip_agent">Тип агента:</string>
+	<string name="name_agent">Наименование агента</string>
+	<string-array name="tip_agent_spisok">
+	    <item>ФЛ</item>
+	    <item>ИП</item>
+	    <item>ЮЛ</item>
+	</string-array>
+	<string name="fio">ФИО</string>
+	<string name="doveren">Доверенность</string>
+	<string name="nomer_doveren">Номер доверенности</string>
+	<string name="data_doveren">Дата доверенности</string>
+	<string name="nomer">Номер:</string>
+	<string name="data">Дата:</string>
+	<string name="filial">Филиал (подразделение):</string>
+	<string name="region">Регион страхования:</string>
+	
+	<string name="www_cbr">http://www.cbr.ru/scripts/XML_daily.asp</string>
+	<string name="downloading">Загрузка данных</string>
+	<string name="please_wait">Пожалуйста ждите</string>
+	
+	<string name="load_project">Загрузить проект</string>
+	<string name="save_project">Сохранить проект</string>
+	<string name="exch_rates">Курсы валют</string>
+	<string name="risk_option">Риски и опции</string>
+	<string name="setting">Настройки</string>
+	
+	<string name="maks_avto">Калькулятор "МАКС-АВТО"</string>
+	
+	<string name="risk">Риски</string>
+	<string name="dop">Доп.оборудование</string>
+	<string name="dop_summa">Сумма:</string>
+	<string name="tuning">Тюнинг</string>
+	<string name="dago">ДАГО</string>
+	<string name="summa_rub">Сумма, руб.:</string>
+	<string-array name="summa_dago_spisok">
+	    <item>300 000</item>
+	    <item>500 000</item>
+	    <item>750 000</item>
+	    <item>1 000 000</item>
+	    <item>1 500 000</item>
+	    <item>3 000 000</item>
+	    <item>5 000 000</item>
+	    <item>10 000 000</item>
+	</string-array>
+	<string name="ns">Несчастный случай</string>
+	<string name="system_ns">Система:</string>
+	<string-array name="system_ns_spisok">
+	    <item>По системе мест</item>
+	    <item>По паушальной системе</item>
+	</string-array>
+	<string name="kol_vo">Кол-во:</string>
+	<string name="for_1_seat">На одно место:</string>
+	<string name="serv_options">Сервисные опции</string>
+	<string name="gap">Гарантия сохранения стоимости (GAP)</string>
+	<string name="remont_bez">Ремонт ТС без предоставления справок 2 раза в год в пределах 5%</string>
+	<string name="komissar">Аварийный комиссар при ДТП</string>
+	<string name="sbor_spr">Сбор справок в органах ГИБДД</string>
+	<string name="evacuation">Эвакуация ТС при повреждении</string>
+	<string name="attention">ВНИМАНИЕ!!!</string>
+	<string name="skidka1">   Агенту разрешено применение "Скидки руководителя" (скидки за счет уменьшения КВ агента)
+	    в соответсвии с изменениями методических указаний по порядку заключения договоров добровольного 
+	    страхования транспортных средств (средств наземного транспорта), утвержденными приказами ЗАО "МАКС"
+	    №394-ОД(А) от 18.10.2010г. и №484-ОД(А) от 15.12.2010г.</string>
+	<string name="skidka2">Условия применения скидки:</string>
+	<string name="skidka3">1.С агентом подписано дополнительное соглашение к агентскому договору
+	    о возможности применения "Скидки руководителя" (коэффициент К15) с соответствующим уменьшением
+	    агентского вознаграждения.</string>
+	<string name="skidka4">2.В случае если агентом по договору страхования выступает штатный
+	    сотрудник (офисная продажа), то применение коэффициента Л15 возможно только при 
+	    наличии письменного согласования с директором дирекции/директором филиала.</string>
+	<string name="skidka5">3.Запрещено применение "Скидки руководителя" (коэффициент К15) агентами филиалов,
+	    находящихся на финансировании ГК.</string>
+	<string name="skidka6">3.Запрещено применение "Скидки руководителя" (коэффициент К15) по банковским 
+	    каналам продаж при наличии централизованного комиссионного вознаграждения, если
+	    отсутствует официальный письменный отказ Банка от комиссионного вознаграждения в 
+	    пользу агента.</string>
+	<string name="skidka_razm">Размер скидки:</string>
+	<string-array name="skidka_razm_spisok">
+	    <item>Скидка 1%</item>
+	    <item>Скидка 2%</item>
+	    <item>Скидка 3%</item>
+	    <item>Скидка 4%</item>
+	    <item>Скидка 5%</item>
+	    <item>Скидка 6%</item>
+	    <item>Скидка 7%</item>
+	    <item>Скидка 8%</item>
+	    <item>Скидка 9%</item>
+	    <item>Скидка 10%</item>
+	    <item>Скидка 11%</item>
+	    <item>Скидка 12%</item>
+	    <item>Скидка 13%</item>
+	    <item>Скидка 14%</item>
+	    <item>Скидка 15%</item>
+	</string-array>
+	<string name="ya_oznak">Я ознакомлен с условиями применения скидки</string>
+	<string name="apply">Применить</string>
+	<string name="agree">Принять</string>
+	
+	<string name="warning">Предупреждение</string>
+	<string name="yes">Да</string>
+	<string name="no">Нет</string>
+	<string name="agent_cancel_message">Без заполнения данной формы продолжение работы невозможно! 
+	    Повторить ввод данных?</string>
+	    
+	<string name="news">Новости</string>
+</resources>
+

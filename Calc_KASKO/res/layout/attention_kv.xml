@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="1"
+	android:stretchColumns="*" >
+    
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textSize="10pt"
+             android:textStyle="bold"
+			 android:gravity="center"
+			 android:layout_span="2"
+		     android:text="@string/attention" />
+	</TableRow>
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/skidka1" />
+	</TableRow>
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/skidka2" />
+	</TableRow>
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/skidka3" />
+	</TableRow>
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/skidka4" />
+	</TableRow>
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/skidka5" />
+	</TableRow>
+	<TableRow 
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" >
+		 <TextView 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/skidka6" />
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content" >
+	    <Spinner 
+	        android:id="@+id/spinSkidkaRazm"
+	        android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	       	android:entries="@array/skidka_razm_spisok"
+	       	android:spinnerMode="dialog" />
+	</TableRow>
+	<TableRow 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+	    <CheckBox
+	    	android:id="@+id/cbYaOznak"
+	    	android:layout_span="2"
+	    	android:text="@string/ya_oznak" />
+	</TableRow>
+</TableLayout>

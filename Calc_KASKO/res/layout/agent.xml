@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/tl3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:shrinkColumns="1"
+    android:stretchColumns="*" >
+    
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<TextView 
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_span="2"
+					android:textSize="10pt"
+                    android:textStyle="bold"
+					android:gravity="center"
+					android:text="@string/agent" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<TextView
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/kod_agent" />
+				<EditText 
+					android:id="@+id/etKodAgent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:inputType="number"
+					android:background="@android:drawable/editbox_background"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/tip_agent" />
+		        <Spinner 
+		            android:id="@+id/spinTipAgent"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog"
+		        	android:entries="@array/tip_agent_spisok" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<TextView 
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/fio" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<EditText 
+					android:id="@+id/etFIOAgent" 
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_span="2"
+					android:background="@android:drawable/editbox_background" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<View
+	                android:layout_width="fill_parent"
+	                android:layout_height="0.2dp"
+	                android:layout_span="2"
+	                android:visibility="visible"
+	                android:background="@android:color/darker_gray"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<TextView 
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/doveren" />
+		    </TableRow>
+		    
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+		    		android:text="@string/nomer" />
+		        <EditText 
+					android:id="@+id/etDoverenNomer"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:drawable/editbox_background"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+		    		android:text="@string/data" />
+		        <TextView
+		            android:id="@+id/tvDataDoveren"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@android:drawable/editbox_background" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content">
+		    	<View
+	                android:layout_width="fill_parent"
+	                android:layout_height="0.2dp"
+	                android:layout_span="2"
+	                android:visibility="visible"
+	                android:background="@android:color/darker_gray"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/filial" />
+		        <Spinner 
+		            android:id="@+id/spinFilial"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/region" />
+		        <Spinner 
+		            android:id="@+id/spinRegion"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <Button
+		            android:id="@+id/btnAgree"
+		            android:layout_width="wrap_content"
+		            android:layout_span="2"
+		        	android:text="@string/agree"
+		        	android:onClick="onClick" >
+		        </Button>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		    	<View
+		            android:layout_width="fill_parent"
+	                android:layout_height="0.2dp"
+	                android:layout_span="2"
+	                android:visibility="visible"
+	                android:background="#f00"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:textColor="#f00"
+		    		android:id="@+id/tvError"
+		    		android:text="@string/filial" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		    	<View
+		            android:layout_width="fill_parent"
+	                android:layout_height="0.2dp"
+	                android:layout_span="2"
+	                android:visibility="visible"
+	                android:background="#f00"/>
+		    </TableRow>
+</TableLayout>
+	
+

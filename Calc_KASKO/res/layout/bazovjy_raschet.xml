@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_horizontal"
+	    		android:textSize="10pt"
+	    		android:text="@string/pred_rasch_KASKO" />
+    	</LinearLayout>
+    	
+	    <TableLayout 
+	        android:id="@+id/tl1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:stretchColumns="1" >
+    
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/program" />
+		        <Spinner 
+		            android:id="@+id/spinProgr"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog"
+		        	android:entries="@array/program_spec">
+		        	<requestFocus/> 
+		        </Spinner>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="" />
+		        <Spinner 
+		            android:id="@+id/spinKASKO"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog"
+		        	android:entries="@array/kasko_vid" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/srok" />
+		        <Spinner 
+		            android:id="@+id/spinSrok"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog"
+		        	android:entries="@array/srok_spisok" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/strahovatel" />
+		        <Spinner 
+		            android:id="@+id/spinStrahovatel"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog"
+		        	android:entries="@array/strahovatel_tip" />
+		    </TableRow>
+	    </TableLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_horizontal"
+	    		android:textSize="8pt"
+	    		android:text="@string/bazovyj_raschet" />
+    	</LinearLayout>
+    	
+	    <TableLayout 
+	        android:id="@+id/tl2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:shrinkColumns="1"
+	        android:stretchColumns="*" >
+    
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/marka" />
+		        <Spinner 
+		            android:id="@+id/spinMarka"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/model" />
+		        <Spinner 
+		            android:id="@+id/spinModel"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="110dp"
+		    		android:layout_height="40dp"
+		    		android:lines="2"
+		    		android:layout_gravity="center_vertical"
+		    		android:text="@string/tcel_isp" />
+		        <Spinner 
+		            android:id="@+id/spinTcelIsp"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" 
+		        	android:entries="@array/tcel_spisok" />
+		    </TableRow>
+		    <TableRow 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<CheckBox
+	        		android:id="@+id/cbTSNew"
+	        		android:layout_span="2"
+	        		android:text="@string/ts_new" />
+			</TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="110dp"
+		    		android:layout_height="40dp"
+		    		android:lines="2"
+		    		android:layout_gravity="center_vertical"
+		    		android:text="@string/data_priobr" />
+		        <TextView
+		            android:id="@+id/tvDataPriobr"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text=""
+		    		android:background="@android:drawable/editbox_background" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="110dp"
+		    		android:layout_height="40dp"
+		    		android:lines="2"
+		    		android:layout_gravity="center_vertical"
+		    		android:text="@string/god_izgotovl" />
+		        <EditText
+		            android:id="@+id/etGodIzgotovl"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:inputType="number"
+		    		android:background="@android:drawable/editbox_background" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/probeg" />
+		        <EditText 
+		            android:id="@+id/etProbeg"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:inputType="number"
+		    		android:background="@android:drawable/editbox_background"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/valyuta" />
+		        <Spinner 
+		            android:id="@+id/spinValyuta"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" 
+		        	android:entries="@array/valyuta_spisok" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView
+		            android:id="@+id/tvStoimOt" 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/ot" />
+		        <TextView
+		            android:id="@+id/tvStoimDo" 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/_do" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/stoimost" />
+		        <EditText 
+		            android:id="@+id/etStoimost"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:inputType="number"
+		    		android:background="@android:drawable/editbox_background"/>
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="110dp"
+		    		android:layout_height="40dp"
+		    		android:lines="2"
+		    		android:layout_gravity="center_vertical"
+		    		android:text="@string/strah_summa" />
+		        <EditText 
+		            android:id="@+id/etStrahSumma"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:inputType="number"
+		    		android:background="@android:drawable/editbox_background"/>
+		    </TableRow>
+		    <TableRow 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<CheckBox
+	        		android:id="@+id/cbK16"
+	        		android:layout_span="2"
+	        		android:text="@string/primenit_k16" />
+			</TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="110dp"
+		    		android:layout_height="40dp"
+		    		android:lines="2"
+		    		android:layout_gravity="center_vertical"
+		    		android:text="@string/ohranka" />
+		        <Spinner 
+		            android:id="@+id/spinOhranka"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" 
+		        	android:entries="@array/ohranka_spisok" />
+		    </TableRow>
+		    <TableRow 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<CheckBox
+	        		android:id="@+id/cbNeohrStoyanka"
+	        		android:layout_span="2"
+	        		android:text="@string/neohr_stoyanka" />
+			</TableRow>
+		    <TableRow 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<CheckBox
+	        		android:id="@+id/cbArenda"
+	        		android:layout_span="2"
+	        		android:text="@string/arenda" />
+			</TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="110dp"
+		    		android:layout_height="40dp"
+		    		android:lines="2"
+		    		android:layout_gravity="center_vertical"
+		    		android:text="@string/koef_fil" />
+		        <Spinner 
+		            android:id="@+id/spinKoefFil"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" 
+		        	android:entries="@array/koef_fil_spisok" />
+		    </TableRow>
+		    <TableRow 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<CheckBox
+	        		android:id="@+id/cbNeogrKolvo"
+	        		android:layout_span="2"
+	        		android:text="@string/neogr_kolvo" />
+			</TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/vozrast" />
+		        <Spinner 
+		            android:id="@+id/spinVozrast"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" 
+		        	android:entries="@array/vozrast_spisok" />
+		    </TableRow>
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/stag" />
+		        <Spinner 
+		            android:id="@+id/spinStag"
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:spinnerMode="dialog" 
+		        	android:entries="@array/stag_spisok" />
+		    </TableRow>
+		</TableLayout>
+		
+	</LinearLayout>
+</ScrollView>
